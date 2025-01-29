@@ -174,15 +174,30 @@
         <div class="project-grid">
           <div class="project">
             <h3>Front-end Web Development</h3>
-            <p></p>
+            <p>
+              A front-end developer is a person who makes websites look good and
+              easy to use, handling everything you see and click on. I am proud
+              to be a one of them as i enjoy making things look good and
+              organized.
+            </p>
           </div>
           <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
+            <h3>Backend Web Development</h3>
+            <p>
+              A back-end developer is a person who manages the behind-the-scenes
+              stuff, making sure data is processed and stored properly.In the
+              nearest future i am looking forward to learning back-end
+              development cause it will make me a whole, not knowing it yet
+              makes it look like one has a missing piece.
+            </p>
           </div>
           <div class="project">
-            <h3>Project 3</h3>
-            <p>Description of Project 3</p>
+            <h3>Full-Stack Web Development</h3>
+            <p>
+              A full-stack developer is a person who does both, building and
+              connecting the entire system. At the end of everything the real
+              goal is to become a full-stack developer, a whole.
+            </p>
           </div>
         </div>
       </section>
@@ -204,7 +219,9 @@
       <section id="blog">
         <h2>Blog</h2>
         <div id="blog-posts">
-          <!-- Blog posts will be dynamically added here -->
+          <p>
+            <strong>My journey in Web Development :</strong>
+          </p>
         </div>
       </section>
     </main>
@@ -238,7 +255,7 @@
         const blogPosts = [
           {
             title: "My First Blog Post",
-            content: "This is the content of my first blog post.",
+            content: "",
           },
           {
             title: "Learning Web Development",
@@ -255,9 +272,9 @@
           const postElement = document.createElement("div");
           postElement.classList.add("blog-post");
           postElement.innerHTML = `
-            <h3>${post.title}</h3>
-            <p>${post.content}</p>
-        `;
+                  <h3>${post.title}</h3>
+                  <p>${post.content}</p>
+              `;
           blogPostsContainer.appendChild(postElement);
         });
       });
