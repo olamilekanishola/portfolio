@@ -18,16 +18,19 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      color: #333;
+      color: #cfc8c7ad;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 0px;
+      display: flexbox;
+      position: static;
+      \ \justify-content: center;
     }
 
     header {
-      background-color: #f4f4f4;
+      background-color: #15a8c68a;
       padding: 1rem;
-      position: sticky;
+      position: relative;
       top: 0;
       z-index: 100;
     }
@@ -39,7 +42,7 @@
     }
 
     nav a {
-      color: #333;
+      color: #311313;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
@@ -52,24 +55,26 @@
     section {
       margin: 2rem 0;
       padding: 2rem;
-      background-color: #fff;
+      background-color: #0e0d0d;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     .textbody {
-      width: 50%;
-      float: right;
-      text-overflow: 100px;
-      padding-top: 210px;
-      text-justify: auto;
-      font-weight: 40px;
-      font-size: larger;
-      font-variant: initial;
+      width: 62%;
+      float: initial;
+      padding: 30px;
+      font-size: medium;
+      font-variant: normal;
+      gap: 30px;
+      margin: 0 auto;
     }
     img {
       width: 50%;
       max-width: 400px;
       border-radius: 8%;
+    }
+    #top {
+      text-decoration: none;
     }
 
     h1,
@@ -86,7 +91,7 @@
     }
 
     .project {
-      background-color: #f4f4f4;
+      background-color: #1c0404;
       padding: 1rem;
       border-radius: 5px;
       transition: transform 0.3s ease;
@@ -127,8 +132,11 @@
     .blog-post {
       margin-bottom: 1rem;
       padding: 1rem;
-      background-color: #f4f4f4;
+      background-color: #0a759c;
       border-radius: 5px;
+    }
+    footer {
+      color: #023e8a;
     }
 
     /* Responsive design */
@@ -225,6 +233,7 @@
         </div>
       </section>
     </main>
+    <a href="#about" id="top">Back to top</a>
 
     <footer>
       <p>&copy; 2025 Olamilekan. All rights reserved.</p>
@@ -255,15 +264,18 @@
         const blogPosts = [
           {
             title: "My First Blog Post",
-            content: "",
+            content:
+              "The beginning of web development is has to be the greatest feelings, personally i feel like there's no passion you might have for it that you won't get tired of it you just won't be able to work away cause you're enjoying it and its just few steps away from your dreams coming true. Stay consistent most of the time.",
           },
           {
             title: "Learning Web Development",
-            content: "Here are some tips for learning web development...",
+            content:
+              "Here are some tips for learning web development, start with the basics (HTML and CSS). Practice regularly... Try to build real project, clone projects if you can. Get yourself familiar to the dev tools... LEARN GIT. Be patient and persistent",
           },
           {
             title: "The Importance of Responsive Design",
-            content: "Responsive design is crucial because...",
+            content:
+              "Responsive design is crucial because it ensures websites work well across all devices, improving user experience, SEO rankings, and conversion rates while reducing maintenance costs and maintaining brand consistency.",
           },
         ];
 
